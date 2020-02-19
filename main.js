@@ -42,6 +42,9 @@ class Picker {
     this.context.fillStyle = gradient;
     this.context.fillRect(0, 0, this.width, this.height);
 
+    ///HSL conversion ----------------
+    ///HEX conversion ----------------
+
     //Circle
     this.context.beginPath();
     this.context.arc(
@@ -115,4 +118,7 @@ setInterval(() => picker.draw(), 1);
 picker.onChange(color => {
   let selected = document.getElementsByClassName("selected")[0];
   selected.style.backgroundColor = `rgb(${color.r}, ${color.g}, ${color.b})`;
+  //call new function to create hex codes
 });
+//function convert
+// convert rgb to hsl

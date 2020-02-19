@@ -1,0 +1,38 @@
+#kuler-d3-colorwheel {
+  height: 620px;
+}
+
+#contrast-ratio-chart {
+  width: 100%;
+  height: 400px;
+  background: white;
+}
+
+.colorwheel-mode-toggle {
+  display: none;
+}
+
+.colorwheel-theme {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.colorwheel-theme-swatch {
+  max-width: 120px;
+}
+
+#contrast-ratio-chart path {
+  stroke-width: 2;
+  fill: none;
+}
+
+#contrast-ratio-chart .axis path,
+#contrast-ratio-chart .axis line {
+  fill: none;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+#contrast-ratio-chart .breakpoint {
+  stroke-opacity: 0.5;
+}
